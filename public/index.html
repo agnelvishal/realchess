@@ -10,12 +10,12 @@
   <body>
     <div class="page login" id='page-login'>
       <div class='logo'></div>
-      <input id='username'></input>
-      <button id='login'>Login</button>
+      <input type="hidden" id='username'></input>
+      <button id='login'> Pay Ethereum token </button>
     </div>
     <div class="page lobby" id='page-lobby'>
-      <h1>Real Chess</h1>
-      <h2 id='userLabel'></h2>
+      <h1>Crypto Chess</h1>
+      <h2 style="display:none" id='userLabel'></h2>
       <h3>Active games</h3>
       <div id='gamesList'>
         No active games
@@ -30,6 +30,9 @@
       <button id='game-resign'>Resign</button>
       <div id='game-board' style="width: 400px">
       </div>
+      <div id="gameOver"> </div>
+      <div id="cryptoStatus"> </div>
+
     </div>
 
     <script src="lib/socket.io-1.2.0.js"></script>
